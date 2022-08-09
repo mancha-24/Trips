@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+//import {connect} from 'react-redux';
+//import { getAllTrips } from '../../actions/tripActions';
+
+
 export class Trips extends Component
 {
     constructor(props){
@@ -18,7 +22,14 @@ export class Trips extends Component
 
     componentDidMount(){
         this.populateTripsData();
+        //this.props.getAllTrips();
     }
+
+    /*componentDidUpdate(prevProps){
+        if(prevProps.trips.data != this.props.trips.data){
+            this.setState({trips: this.props.trips.data});
+        }
+    }*/
 
     onTripUpdate(id){
         const {history}= this.props;
@@ -97,6 +108,15 @@ export class Trips extends Component
                     this.renderAllTripsTable(this.state.trips)
                 )
             )
+        /*let content = this.props.trips.loading ?
+        (
+            <p>
+                <em>loading...</em>
+            </p>
+        ) : 
+        (
+            this.state.trips.length && this.renderAllTripsTable(this.state.trips)
+        );*/
 
         return (
             <div>
@@ -107,3 +127,9 @@ export class Trips extends Component
         );
     }
 }
+
+/*const mapStateToProps = ({trips}) => ({
+    trips
+});
+
+export default connect(mapStateToProps, {getAllTrips})(Trips);*/
