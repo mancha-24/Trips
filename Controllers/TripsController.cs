@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using ReactTrips.Data;
-using ReactTrips.Services;
+using ReactTrips1.Data;
+using ReactTrips1.Services;
 
-namespace ReactTrips.Controllers
+namespace ReactTrips1.Controllers
 {
     [Route("api/[controller]")]
     public class TripsController : Controller

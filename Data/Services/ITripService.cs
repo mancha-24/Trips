@@ -1,6 +1,7 @@
-using ReactTrips.Data;
+using System.Collections.Generic;
+using ReactTrips1.Data;
 
-namespace ReactTrips.Services
+namespace ReactTrips1.Services
 {
     public interface ITripService
     {

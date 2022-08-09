@@ -1,4 +1,6 @@
-namespace ReactTrips.Data
+using System;
+
+namespace ReactTrips1.Data
 {
     public class Trip
     {

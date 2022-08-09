@@ -1,4 +1,7 @@
-namespace ReactTrips.Data
+using System;
+using System.Collections.Generic;
+
+namespace ReactTrips1.Data
 {
     public static class DataTrips
     {
